@@ -1,0 +1,1738 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-12-11 05:19:35",
+    "containerVersion": {
+        "path": "accounts/6065833040/containers/98555344/versions/0",
+        "accountId": "6065833040",
+        "containerId": "98555344",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6065833040/containers/98555344",
+            "accountId": "6065833040",
+            "containerId": "98555344",
+            "name": "webwyze.com",
+            "publicId": "GTM-WVXH75X",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1670731117318",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6065833040/containers/98555344/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true
+            },
+            "tagIds": [
+                "GTM-WVXH75X"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "3",
+                "name": "GA4 – Pageview & Config",
+                "type": "gaawc",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendPageView",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableSendToServerContainer",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementId",
+                        "value": "G-9567HXSP2Q"
+                    }
+                ],
+                "fingerprint": "1670733146984",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "14",
+                "name": "GA4 Event - Ecommerce Events",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "{{Event}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "items"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Items}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "transaction_id"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Transaction ID}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "affiliation"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Affiliation}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "value"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Value}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "tax"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Tax}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "shipping"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Shipping}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "currency"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Currency}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "coupon"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Ecommerce Coupon}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 – Pageview & Config"
+                    }
+                ],
+                "fingerprint": "1670734969246",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "16",
+                "name": "GA4 Event - YouTube Video",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "video_{{Video Status}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_current_time"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Video Current Time}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_duration"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Video Duration}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_percent"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Video Percent}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_provider"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Video Provider}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_title"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Video Title}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_url"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{Video URL}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 – Pageview & Config"
+                    }
+                ],
+                "fingerprint": "1670735033215",
+                "firingTriggerId": [
+                    "15"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "22",
+                "name": "cHTML - Vimeo Listener",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n\nvar dataLayer = (typeof(dataLayer) !== \"undefined\" && dataLayer instanceof Array) ? dataLayer : [];\nvar videoLabels=[];\nvar lastP=[];\n\nvar _playerTitle = {}, _playerAuthor = {}, _playerAuthorURL = {}, _playerUploadDate = {}; \n\ntry{\n init();\n}\ncatch(err){\n dataLayer.push({\n 'event': 'gtm.error',\n 'errorMessage': e.message,\n 'tag': 'Vimeo Video Listener'\n })\n}\nfunction init(){\n try{\n var player=document.getElementsByTagName(\"iframe\");\n for (i = 0; i < player.length; ++i) {\n var url=player[i].getAttribute(\"src\");\n\n if(/player\\.vimeo\\.com\\/video/.test(url)){ \n if(!player[i].hasAttribute(\"id\")){ \n player[i].setAttribute(\"id\",\"vimeo_id_\"+i); \n }\n var urlUpdated=false;\n if(!/api=/.test(url)){ \n url=updateUrl(url,\"api\",1);\n urlUpdated=true;\n }\n\n if(!/player_id=/.test(url)){ \n url=updateUrl(url,\"player_id\",player[i].getAttribute(\"id\"));\n urlUpdated=true;\n }\n if(urlUpdated){ \n player[i].setAttribute(\"src\",url)\n }\n videoLabels[player[i].getAttribute(\"id\")]=player[i].getAttribute(\"src\"); \n }\n }\n\n if (window.addEventListener){\n window.addEventListener('message', onMessageReceived, false);\n }\n else {\n window.attachEvent('onmessage', onMessageReceived, false);\n }\n }\n catch(err){\n }\n}\n\nfunction updateUrl(url,param,value){\n try{\n return url+((/\\?/.test(url)) ? \"&\" : \"?\")+param+\"=\"+value; \n }\n catch(err){\n }\n}\n\nfunction onMessageReceived(e) {\n try{\n var data = e.data;\n \n if(typeof data === \"string\"){\n data = JSON.parse(data);\n }\n \n switch (data.event) {\n case 'ready':\n onReady(data);\n break;\n case 'play':\n onPlay(data);\n break;\n case 'pause':\n onPause(data);\n break;\n case 'timeupdate':\n onPlayProgress(data);\n break;\n }\n }\n catch(err){\n }\n}\n\nfunction post(action, value) {\n try{\n var data = {\n method: action\n };\n\n if (value) {\n data.value = value;\n }\n\n var message = JSON.stringify(data);\n var player = document.getElementsByTagName(\"iframe\");\n var url;\n var prot;\n\n\n for (i = 0; i < player.length; ++i) {\n url=player[i].getAttribute(\"src\");\n\n if(/player\\.vimeo\\.com\\/video/.test(url)){\n prot = player[i].getAttribute('src').split('?')[0].split('//')[0];\n if (!prot){\n url=\"https:\" + player[i].getAttribute(\"src\").split('?')[0];\n }\n player[i].contentWindow.postMessage(data, url);\n }\n }\n }\n catch(err){\n }\n}\n\nfunction getLabel(id){\n try{\n return videoLabels[id].split('?')[0].split('/').pop();\n }\n catch(err){\n }\n}\n\nfunction getVimeoInfo(url, callback) {\n \n var script = document.createElement('script');\n script.type = 'text/javascript';\n script.src = url;\n \n document.getElementsByTagName('body')[0].appendChild(script);\n}\n\nfunction vimeoCallback(e){\n //console.log(e);\n _playerTitle[e['video_id']] = e['title'];\n _playerAuthor[e['video_id']] = e['author_name']\n _playerAuthorURL[e['video_id']] = e['author_url']\n _playerUploadDate[e['video_id']] = e['upload_date']\n}\n\nfunction onReady(data) {\n try{\n getVimeoInfo(\"https://www.vimeo.com/api/oembed.json?url=https://vimeo.com/\"+getLabel(data.player_id)+\"&callback=vimeoCallback\", vimeoCallback);\n\n post('addEventListener', 'play');\n post('addEventListener', 'pause');\n post('addEventListener', 'finish');\n post('addEventListener', 'playProgress');\n }\n catch(err){\n }\n}\n\nfunction onPlay(data){\n try{\n var t = data.data.duration - data.data.seconds <= 1.5 ? 1 : (Math.floor(data.data.seconds / data.data.duration * 4) / 4).toFixed(2); \n dataLayer.push({\n event: \"video\",\n video_action: \"play\",\n video_url: 'https://vimeo.com/' + getLabel(data.player_id),\n video_percent: data.data.percent.toFixed(2) * 100,\n video_title: _playerTitle[getLabel(data.player_id)].toLowerCase()\n });\n }\n catch(err){\n }\n}\n\nfunction onPause(data){\n try{\n var t = data.data.duration - data.data.seconds <= 1.5 ? 1 : (Math.floor(data.data.seconds / data.data.duration * 4) / 4).toFixed(2); \n dataLayer.push({\n event: \"video\",\n video_action: \"pause\",\n video_url: 'https://vimeo.com/' + getLabel(data.player_id),\n video_percent: data.data.percent.toFixed(2) * 100,\n video_title: _playerTitle[getLabel(data.player_id)].toLowerCase()\n });\n }\n catch(err){\n }\n}\n\n// Track progress: 25%, 50%, 75%, 100%\nfunction onPlayProgress(data) {\n try{\n var t = data.data.duration - data.data.seconds <= 1.5 ? 1 : (Math.floor(data.data.seconds / data.data.duration * 4) / 4).toFixed(2); if (!lastP[data.player_id] || t > lastP[data.player_id]) {\n lastP[data.player_id]=t;\n if (parseFloat(t) != 0){\n dataLayer.push({\n event: \"video\",\n video_action: \"progress\",\n video_url: 'https://vimeo.com/' + getLabel(data.player_id),\n video_percent: t * 100,\n video_title: _playerTitle[getLabel(data.player_id)].toLowerCase()\n })\n }\n }\n }\n catch(err){\n }\n}\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1670735095317",
+                "firingTriggerId": [
+                    "19"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "26",
+                "name": "GA4 Event - Vimeo Video",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "video_{{dlv - video_action}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_percent"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{dlv - video_percent}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_title"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{dlv - video_title}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_url"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{dlv - video_url}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 – Pageview & Config"
+                    }
+                ],
+                "fingerprint": "1670735024711",
+                "firingTriggerId": [
+                    "36"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "37",
+                "name": "GA4 Event - HTML5 Video",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "video_{{dlv - video_status}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventParameters",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_provider"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{dlv - video_provider}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_percent"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{dlv - video_percent}}"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "name",
+                                        "value": "video_title"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "{{dlv - video_title}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 – Pageview & Config"
+                    }
+                ],
+                "fingerprint": "1670735001869",
+                "firingTriggerId": [
+                    "36"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "39",
+                "name": "cHTML - HTML5 Video Listener",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n// Let's wrap everything inside a function so variables are not defined as globals \n(function() {\n    // This is gonna our percent buckets ( 25%-75% ) \n    var divisor = 25;\n    // We're going to save our players status on this object. \n    var videos_status = {};\n    // This is the funcion that is gonna handle the event sent by the player listeners \n    function eventHandler(e) {\n        switch (e.type) {\n            // This event type is sent everytime the player updated it's current time, \n            // We're using for the % of the video played. \n        case 'timeupdate':\n            // Let's set the save the current player's video time in our status object \n            videos_status[e.target.id].current = Math.round(e.target.currentTime);\n            // We just want to send the percent events once \n            var pct = Math.floor(100 * videos_status[e.target.id].current / e.target.duration);\n            for (var j in videos_status[e.target.id]._progress_markers) {\n                if (pct >= j && j > videos_status[e.target.id].greatest_marker) {\n                    videos_status[e.target.id].greatest_marker = j;\n                }\n            }\n            // current bucket hasn't been already sent to GA?, let's push it to GTM\n            if (videos_status[e.target.id].greatest_marker && !videos_status[e.target.id]._progress_markers[videos_status[e.target.id].greatest_marker]) {\n                videos_status[e.target.id]._progress_markers[videos_status[e.target.id].greatest_marker] = true;\n                dataLayer.push({\n                    'event': 'video',\n                    'video_status': 'progress',\n                    'video_provider' : 'generic html5 video player',\n                    'video_percent': videos_status[e.target.id].greatest_marker,\n                    // We are sanitizing the current video src string, and getting just the video name part\n                    'video_title': decodeURIComponent(e.target.currentSrc.split('/')[e.target.currentSrc.split('/').length - 1])\n                });\n            }\n            break;\n            // This event is fired when user's click on the play button\n        case 'play':\n            dataLayer.push({\n                'event': 'video',\n                'video_status' : 'play',\n                'video_provider' : 'generic html5 video player',\n                'video_percent': videos_status[e.target.id].greatest_marker,\n                'video_title': decodeURIComponent(e.target.currentSrc.split('/')[e.target.currentSrc.split('/').length - 1])\n            });\n            break;\n            // This event is fied when user's click on the pause button\n        case 'pause':\n            if (videos_status[e.target.id].greatest_marker < '75') {\n            dataLayer.push({\n                'event': 'video',\n                'video_status' : 'pause',\n                'video_provider' : 'generic html5 video player',\n                'video_percent': videos_status[e.target.id].greatest_marker,\n                'video_title': decodeURIComponent(e.target.currentSrc.split('/')[e.target.currentSrc.split('/').length - 1])\n            });\n            }\n            break;\n            // If the user ends playing the video, an Finish video will be pushed ( This equals to % played = 100 )  \n        case 'ended':\n            dataLayer.push({\n                'event': 'video',\n                'video_status' : 'complete',\n                'video_provider' : 'generic html5 video player',\n                'video_percent': '100',\n                'video_title': decodeURIComponent(e.target.currentSrc.split('/')[e.target.currentSrc.split('/').length - 1])\n            });\n            break;\n        default:\n            break;\n        }\n    }\n    // We need to configure the listeners\n    // Let's grab all the the \"video\" objects on the current page     \n    var videos = document.getElementsByTagName('video');\n    for (var i = 0; i < videos.length; i++) {\n        // In order to have some id to reference in our status object, we are adding an id to the video objects\n        // that don't have an id attribute. \n        var videoTagId;\n        if (!videos[i].getAttribute('id')) {\n            // Generate a random alphanumeric string to use is as the id\n            videoTagId = 'html5_video_' + Math.random().toString(36).slice(2);\n            videos[i].setAttribute('id', videoTagId);\n        }// Current video has alredy a id attribute, then let's use it <img draggable=\"false\" class=\"emoji\" alt=\"?\" src=\"https://s.w.org/images/core/emoji/2/svg/1f642.svg\">\n        else {\n            videoTagId = videos[i].getAttribute('id');\n        }\n        // Video Status Object declaration  \n        videos_status[videoTagId] = {};\n        // We'll save the highest percent mark played by the user in the current video.\n        videos_status[videoTagId].greatest_marker = 0;\n        // Let's set the progress markers, so we can know afterwards which ones have been already sent.\n        videos_status[videoTagId]._progress_markers = {};\n        for (j = 0; j < 100; j++) {\n            videos_status[videoTagId].progress_point = divisor * Math.floor(j / divisor);\n            videos_status[videoTagId]._progress_markers[videos_status[videoTagId].progress_point] = false;\n        }\n        // On page DOM, all players currentTime is 0 \n        videos_status[videoTagId].current = 0;\n        // Now we're setting the event listeners. \n        videos[i].addEventListener(\"play\", eventHandler, false);\n        videos[i].addEventListener(\"pause\", eventHandler, false);\n        videos[i].addEventListener(\"ended\", eventHandler, false);\n        videos[i].addEventListener(\"timeupdate\", eventHandler, false);\n        videos[i].addEventListener(\"ended\", eventHandler, false);\n    }\n})();\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1670733835346",
+                "firingTriggerId": [
+                    "38"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "41",
+                "name": "GA4 Event - Scroll",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "{{Scroll Depth Threshold}}% Scroll"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 – Pageview & Config"
+                    }
+                ],
+                "fingerprint": "1670735014176",
+                "firingTriggerId": [
+                    "40"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "49",
+                "name": "GA4 Event - Contact Email",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "contact_email_click"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 – Pageview & Config"
+                    }
+                ],
+                "fingerprint": "1670735444684",
+                "firingTriggerId": [
+                    "47"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "50",
+                "name": "GA4 Event - Contact Telephone",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "contact_telephone_click"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 – Pageview & Config"
+                    }
+                ],
+                "fingerprint": "1670735484774",
+                "firingTriggerId": [
+                    "46"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "tagId": "51",
+                "name": "GA4 Event - Contact WhatsApp",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "contact_whatsapp_click"
+                    },
+                    {
+                        "type": "TAG_REFERENCE",
+                        "key": "measurementId",
+                        "value": "GA4 – Pageview & Config"
+                    }
+                ],
+                "fingerprint": "1670735522242",
+                "firingTriggerId": [
+                    "48"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "6",
+                "name": "Event - Ecommerce Events GA4",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "MATCH_REGEX",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "view_item|view_item_list|select_item|add_to_cart|remove_from_cart|view_cart|begin_checkout|add_payment_info|add_shipping_info|purchase"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1670731312912"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "15",
+                "name": "Video Player - Youtube",
+                "type": "YOU_TUBE_VIDEO",
+                "fingerprint": "1670734629396",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "progressThresholdsPercent",
+                        "value": "25, 50, 75, 90"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "captureComplete",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "captureStart",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "fixMissingApi",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "triggerStartOption",
+                        "value": "DOM_READY"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "radioButtonGroup1",
+                        "value": "PERCENTAGE"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "capturePause",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "captureProgress",
+                        "value": "true"
+                    }
+                ]
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "19",
+                "name": "Video Player - Vimeo",
+                "type": "WINDOW_LOADED",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{cjs - is vimeo player on a page}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1670734637620"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "36",
+                "name": "Custom - Video Interaction",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "video"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1670733835345"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "38",
+                "name": "Video Player - HTML5 Video",
+                "type": "WINDOW_LOADED",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{cjs - is HTML5 Video on a page}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1670734649855"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "40",
+                "name": "Scroll Depth",
+                "type": "SCROLL_DEPTH",
+                "fingerprint": "1670734248802",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "verticalThresholdUnits",
+                        "value": "PERCENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "verticalThresholdsPercent",
+                        "value": "10,25,50,75"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "verticalThresholdOn",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "triggerStartOption",
+                        "value": "WINDOW_LOAD"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "horizontalThresholdOn",
+                        "value": "false"
+                    }
+                ]
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "42",
+                "name": "Social Link - Facebook",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "facebook.com"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670734703255"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "43",
+                "name": "Social Link - Twitter",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "twitter.com"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670734727314"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "44",
+                "name": "Social Link - Linkedin",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "linkedin.com"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670734715573"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "45",
+                "name": "Social Link - YouTube",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "youtube.com|youtu.be"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670734742631"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "46",
+                "name": "Contact Link - Telephone",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tel:"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670734677181"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "47",
+                "name": "Contact Link - Email",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "mailto:"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670734664638"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "triggerId": "48",
+                "name": "Contact Link - WhatsApp",
+                "type": "LINK_CLICK",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Page URL}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "whatsapp.com"
+                            }
+                        ]
+                    }
+                ],
+                "waitForTags": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "checkValidation": {
+                    "type": "BOOLEAN",
+                    "value": "false"
+                },
+                "waitForTagsTimeout": {
+                    "type": "TEMPLATE",
+                    "value": "2000"
+                },
+                "uniqueTriggerId": {
+                    "type": "TEMPLATE"
+                },
+                "fingerprint": "1670734686698"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "4",
+                "name": "Ecommerce Value",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.value"
+                    }
+                ],
+                "fingerprint": "1670731312910",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "5",
+                "name": "Ecommerce Shipping",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.shipping"
+                    }
+                ],
+                "fingerprint": "1670731312911",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "7",
+                "name": "Ecommerce Currency",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.currency"
+                    }
+                ],
+                "fingerprint": "1670731312913",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "8",
+                "name": "Ecommerce Coupon",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.coupon"
+                    }
+                ],
+                "fingerprint": "1670731312913",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "9",
+                "name": "Ecommerce",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "1"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce"
+                    }
+                ],
+                "fingerprint": "1670731312913",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "10",
+                "name": "Ecommerce Items",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  var ecom = {{Ecommerce}};\n  if ( ecom && ecom.items ) {\n    return ecom.items;\n  } else {\n    return undefined;\n  }\n}"
+                    }
+                ],
+                "fingerprint": "1670731312915",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "11",
+                "name": "Ecommerce Tax",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.tax"
+                    }
+                ],
+                "fingerprint": "1670731312913",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "12",
+                "name": "Ecommerce Affiliation",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.affiliation"
+                    }
+                ],
+                "fingerprint": "1670731312914",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "13",
+                "name": "Ecommerce Transaction ID",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ecommerce.transaction_id"
+                    }
+                ],
+                "fingerprint": "1670731312914",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "18",
+                "name": "cjs - is vimeo player on a page",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n for (var e = document.getElementsByTagName(\"iframe\"), x=0; x < e.length; x++) {\n if (/^https?:\\/\\/player.vimeo.com/.test(e[x].src)) {\n return true;\n }\n }\n return false;\n}"
+                    }
+                ],
+                "fingerprint": "1670733225414",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "21",
+                "name": "dlv - video_url",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "video_url"
+                    }
+                ],
+                "fingerprint": "1670733225412",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "23",
+                "name": "dlv - video_action",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "video_action"
+                    }
+                ],
+                "fingerprint": "1670733225413",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "24",
+                "name": "dlv - video_percent",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "video_percent"
+                    }
+                ],
+                "fingerprint": "1670733225413",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "25",
+                "name": "dlv - video_title",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "video_title"
+                    }
+                ],
+                "fingerprint": "1670733225413",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "32",
+                "name": "GA4 - Measurement ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-9567HXSP2Q"
+                    }
+                ],
+                "fingerprint": "1670733478074",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "33",
+                "name": "cjs - is HTML5 Video on a page",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\nvar video = document.getElementsByTagName('video').length;\n\tif (video > 0) {\n      return true;\n    }\n\telse {\n      return false;\n    }\n}"
+                    }
+                ],
+                "fingerprint": "1670733835345",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "34",
+                "name": "dlv - video_provider",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "video_provider"
+                    }
+                ],
+                "fingerprint": "1670733835344",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "variableId": "35",
+                "name": "dlv - video_status",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "video_status"
+                    }
+                ],
+                "fingerprint": "1670733835344",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "EVENT",
+                "name": "Event"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "VIDEO_PROVIDER",
+                "name": "Video Provider"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "VIDEO_URL",
+                "name": "Video URL"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "VIDEO_TITLE",
+                "name": "Video Title"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "VIDEO_DURATION",
+                "name": "Video Duration"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "VIDEO_PERCENT",
+                "name": "Video Percent"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "VIDEO_VISIBLE",
+                "name": "Video Visible"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "VIDEO_STATUS",
+                "name": "Video Status"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "VIDEO_CURRENT_TIME",
+                "name": "Video Current Time"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "SCROLL_DEPTH_THRESHOLD",
+                "name": "Scroll Depth Threshold"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "SCROLL_DEPTH_UNITS",
+                "name": "Scroll Depth Units"
+            },
+            {
+                "accountId": "6065833040",
+                "containerId": "98555344",
+                "type": "SCROLL_DEPTH_DIRECTION",
+                "name": "Scroll Direction"
+            }
+        ],
+        "fingerprint": "1670735975740",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6065833040/containers/98555344/versions/0?apiLink=version"
+    }
+}
